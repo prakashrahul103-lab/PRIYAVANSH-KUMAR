@@ -2,6 +2,8 @@ import React from 'react';
 import { ArrowRight, Search, Activity, Sparkles, TrendingUp, ShieldAlert, CheckCircle2 } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../config/business';
 import { DigitalMarketingBackground } from './DigitalMarketingBackground';
+import { DigitalMarketingPhotoShowcase } from './DigitalMarketingPhotoShowcase';
+import { HeroImageBanner } from './HeroImageBanner';
 
 interface HeroProps {
   onOpenAudit: () => void;
@@ -59,8 +61,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenAudit, onScrollToHowItWorks })
           </div>
         </div>
 
+        {/* Featured Claude AI Marketing Image & Drag-and-Drop Dropzone */}
+        <HeroImageBanner onOpenAudit={onOpenAudit} />
+
+        {/* Digital Marketing Visual Photo Showcase */}
+        <DigitalMarketingPhotoShowcase onOpenAudit={onOpenAudit} />
+
         {/* Hero Visual: Premium Digital Growth Intelligence Dashboard */}
-        <div className="mt-12 sm:mt-16 max-w-5xl mx-auto">
+        <div className="mt-8 sm:mt-12 max-w-5xl mx-auto">
           <div className="bg-slate-950 text-white rounded-2xl p-4 sm:p-7 shadow-2xl border border-slate-800/80 ring-1 ring-white/10 relative">
             
             {/* Top Bar of Dashboard Preview */}
