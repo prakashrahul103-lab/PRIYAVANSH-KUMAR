@@ -1,0 +1,6 @@
+{
+  "name": "DigiGrowth Intelligence",
+  "description": "Digital Growth & Intelligence platform for discovering business growth gaps across Google presence, website, social media, customer trust, and conversion funnels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
